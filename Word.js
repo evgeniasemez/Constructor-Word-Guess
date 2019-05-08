@@ -20,7 +20,7 @@ class Word {
         }
         return results;
     }
-
+    
     doGuess(takeAguess) {
         var hadCorrectGuess = false;
         for (var i = 0; i < this.word.length; i++) {
@@ -31,7 +31,7 @@ class Word {
         return hadCorrectGuess;
 
     }
-    // inner loop, ? guessed a correct word
+    // inner loop, guessed a correct word
     correctWord() {
         for (var i = 0; i < this.word.length; i++) {
             if (!this.word[i].guessedLetter) {

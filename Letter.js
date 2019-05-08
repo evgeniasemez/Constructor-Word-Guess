@@ -1,4 +1,4 @@
-
+// setting a class with a constractor
 class Letter {
     constructor(letter) {
         this.secretLetter = letter;
