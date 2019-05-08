@@ -12,3 +12,6 @@ Things that work:
 Things to consider building, but don't have time right now:
 1. handle if the same letter guessed 
 2. prompt validation on guesses: secure from bad imput! 
+
+Here is a video:
+![Watch the video](images/WordGame.gif)
