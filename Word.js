@@ -22,12 +22,23 @@ class Word {
     }
 
     doGuess(takeAguess) {
+        var hadCorrectGuess = false;
         for (var i = 0; i < this.word.length; i++) {
-
-            this.word[i].CheckGuess(takeAguess);
-            
+            if (this.word[i].CheckGuess(takeAguess)) {
+                hadCorrectGuess = true;
+            }
         }
+        return hadCorrectGuess;
 
+    }
+    // inner loop, ? guessed a correct word
+    correctWord() {
+        for (var i = 0; i < this.word.length; i++) {
+            if (!this.word[i].guessedLetter) {
+                return false;
+            }
+        }
+        return true;
     }
 }
 module.exports = Word;

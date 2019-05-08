@@ -13,8 +13,15 @@ class Letter {
         }
     }
     CheckGuess(character) {
-        if (character === this.secretLetter) {
+        if (this.guessedLetter) {
+            return false;
+        }
+        else if (character === this.secretLetter) {
             this.guessedLetter = true;
+            return true;
+        }
+        else {
+            return false;
         }
     }
 }
